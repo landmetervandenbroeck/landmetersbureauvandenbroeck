@@ -169,7 +169,7 @@ ul li a:hover {
 /* ----------- animations ------------- */
 
 .animationDiensten {
-    animation: LeftDown 1s cubic-bezier(.17,.67,.83,1.2) 500ms 1 normal forwards;
+    animation: LeftDown 1s cubic-bezier(.17,.67,.83,1.2) 1s 1 normal forwards;
 }
 
 @keyframes LeftDown {
