@@ -197,22 +197,22 @@ p.adres {
 
 .top {
     height: 50vh;
-    animation: topUp 1.2s ease-in-out 0.6s 1 normal forwards;
+    animation: topUp 1.2s ease-in-out 1s 1 normal forwards;
 }
 
 .bottom {
     height: 50vh;
-    animation: bottomDown 1.2s ease-in-out 0.6s 1 normal forwards;
+    animation: bottomDown 1.2s ease-in-out 1s 1 normal forwards;
 }
 
 .wardvdb {
     opacity: 0;
-    animation: textAppear 0.8s ease-in-out 1.2s 1 normal forwards;
+    animation: textAppear 0.8s ease-in-out 1.6s 1 normal forwards;
 }
 
 .logo {
     transform: translateY(30vh);
-    animation: logoUp 1.2s ease-in 0.6s 1 normal forwards;
+    animation: logoUp 1.2s ease-in 1s 1 normal forwards;
 }
 
 /* ul {
