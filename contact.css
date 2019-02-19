@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: url(bg_trees4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contactForSmallScreens {
+    display: none;
+}
+
+/* ---------------- NAVIGATIE ----------------- */
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 80%;
+    /* opacity: 0; */
+}
+
+ul li {
+    list-style: none;
+    margin: 0 60px;
+    transition: 0.5s;
+}
+
+ul li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: rgba(245,245,220,1);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+ul:hover li a {
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+ul li a:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+
+/* ----------------- MiDDEL TEXT MET NAAM ------------------- */
+
+.wardvdb {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color:  rgba(245,245,220, 1);;
+    margin: 0 auto;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.15rem;
+}
+
+.vandenbroeck {
+    font-weight: 200;
+    text-transform: initial;
+}
+
+.wardvdbContainer {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 15vh; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* ---------- contact section -------------- */
+
+.containerContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    color:  rgba(245,245,220, 1);;
+
+}
+
+.contactInfos {
+    margin-bottom: 1.5rem;
+}
+
+.contactInfos a {
+    color:  rgba(245,245,220,1);
+    text-decoration: none;
+}
+
+.naam {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.contactWard {
+    padding-left: 5rem;
+    background: rgba(20, 54, 68, 0.5);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+
+.contactEmiel {
+    padding-right: 5rem;
+    background: rgba(20, 54, 68, 0.5);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    opacity: 0;
+}
+
+.textContact {
+    font-size: 1.5rem;
+    font-weight: 200;
+
+}
+
+.centerAdres {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.paddingIconWard {
+    margin-right: 20px;
+}
+
+.paddingIconEmiel {
+    margin-left: 20px; 
+}
+
+.adresEmielAlignText {
+    text-align: right;
+}
+
+
+/* ----------- animations ------------- */
+
+.leftAnimation {
+    animation: LeftDown 1.5s ease-in-out 500ms 1 normal forwards;
+}
+
+.rightAnimation {
+    animation: RightUp 1.5s ease-in-out 500ms 1 normal forwards;
+}
+
+@keyframes LeftDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0vh); 
+    }
+}
+
+@keyframes RightUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0vh); 
+    }
+}
+
+
+/* -------------- media queries ----------- */
+
+@media (max-width: 1000px) {
+
+    .contactForBigScreens {
+        display: none;
+    }
+
+    .contactForSmallScreens {
+        display: block;
+    }
+
+    .navigation {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .containerContact {
+        display: flex;
+        flex-direction: column;
+        color: rgb(245,245,220);
+        height: initial;
+    }
+
+    .contactWard {
+        padding-left: 1.5rem;
+        padding-right: 3rem;
+        width: 70%;
+    }
+    
+    .contactEmiel {
+        padding-right: 1.5rem;
+        padding-left: 3rem;
+        width: 70%
+    }
+
+    .paddingIconWard {
+        margin-right: 5px;
+    }
+
+    .paddingIconEmiel {
+        margin-left: 5px;
+    }
+
+    body {
+        background: url(bg_trees4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 720px) {
+    ul {
+        flex-direction: column;
+    }
+
+    ul li a {
+        font-size: 1.3rem;
+    }
+    
+}
+
+
+
+@media (max-width: 550px) {
+
+
+    .textContact {
+        font-size: 1rem;
+    }
+
+    .naam h1 {
+        font-size: 1.7rem;
+    }
+
+    .contactWard {
+        padding-left: 1rem;
+        padding-right: 2rem;
+        width: 80%;
+    }
+    
+    .contactEmiel {
+        padding-right: 1rem;
+        padding-left: 2rem;
+        width: 80%
+    }
+
+    .wardvdbContainer h1 {
+        font-size: 2rem;
+    }
+
+    
+
+}
