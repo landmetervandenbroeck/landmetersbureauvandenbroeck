@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: url(bg_trees2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contactForSmallScreens {
+    display: none;
+}
+
+/* ---------------- NAVIGATIE ----------------- */
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 80%;
+    /* opacity: 0; */
+}
+
+ul li {
+    list-style: none;
+    margin: 0 60px;
+    transition: 0.5s;
+}
+
+ul li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: rgba(245,245,220, 0.8);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+ul:hover li a {
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+ul li a:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+/* ----------------- MiDDEL TEXT MET NAAM ------------------- */
+
+.wardvdb {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(245,245,220);
+    margin: 0 auto;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.15rem;
+}
+
+.vandenbroeck {
+    font-weight: 200;
+    text-transform: initial;
+}
+
+.wardvdbContainer {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    /* height: 15vh; */
+}
+
+/* --------------- ONDERSTE DEEL ------------- */
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: stretch;
+    bottom: 0;
+    height: 70vh;
+    width: 100%;
+    background: rgba(20, 54, 68, 0.5);
+    opacity: 0;
+    }
+
+.flex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    }
+
+.flex-item:nth-child(2) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    }
+
+.flex-item:nth-child(3) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    }
+
+.diensten ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.diensten ul li {
+    margin: 0;
+    color:  rgb(245,245,220);
+    padding-bottom: 0.5rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+
+}
+
+.dienstenTitles {
+    font-size: 2.25rem;
+    padding-top: 2.5rem;
+    padding-bottom: 0.5rem;
+    color:  rgb(245,245,220);
+    font-weight: 300;
+    margin: 0px;
+}
+
+
+/* ----------- animations ------------- */
+
+.animationDiensten {
+    animation: LeftDown 1s cubic-bezier(.17,.67,.83,1.2) 500ms 1 normal forwards;
+}
+
+@keyframes LeftDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0vh); 
+    }
+}
+
+/* ------------- media queries ------------ */
+
+@media (max-width: 1100px) {
+    .contactForBigScreens {
+        display: none;
+    }
+
+    .contactForSmallScreens {
+        display: block;
+        width: 100%;
+        background: url(bg_trees2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .container {
+        height: initial;
+    }
+
+
+    .hideIt {
+        display: none;
+    }
+
+    .showIt {
+        display: block;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        width: 100%;
+        background: rgba(20, 54, 68, 0.5);
+        opacity: 0;
+        }
+
+        .dienstenTitles {
+            text-align: center;
+            font-size: 2.25rem;
+        }
+
+        .bottom h1:hover,
+        .bottom h1:active,
+        .bottom h1:focus {
+            border-bottom: 1px solid rgb(245,245,220);
+        }
+
+
+
+        .bottom h1 {
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .klikvoormeerinfo {
+            color:rgb(245,245,220);
+            font-family: 'Alegreya Sans SC', sans-serif;
+            border-bottom: 1px solid rgb(245,245,220);
+            font-weight: 100;
+        }
+
+        .clickable {
+            text-decoration: none;
+        }
+
+        .landmeetkundeInhoud {
+            display: none;
+        }
+
+        .showList {
+            display: block;
+        }
+
+        .hideTitle {
+            display: none;
+        }
+
+        .diensten ul {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .diensten ul li {
+            margin: 0;
+            color: rgb(245,245,220);
+            padding-bottom: 0.5rem;
+            font-family: 'Kanit', sans-serif;
+            font-weight: 200;
+            font-size: 1.4rem;
+            line-height: 1.1;
+            text-align: center;
+        }
+
+        .navigation {
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+        }
+}
+
+
+@media (max-width: 720px) {
+    .navigation {
+        overflow: visible;
+    }
+
+    #ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    ul li a {
+        font-size: 1.3rem;
+        padding: 10px
+    }
+
+    .dienstenTitles {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+@media (max-width: 550px) {
+
+    .wardvdbContainer h1 {
+        font-size: 2rem;
+    }
+
+    .diensten ul li {
+        font-size: 1.1rem;
+    }
+
+    ul li a {
+        font-size: 1.3rem;
+    }
+
+    .dienstenTitles {
+        font-size: 1.5rem;
+    }
+
+    .klikvoormeerinfo {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 370px) {
+
+    .wardvdbContainer h1 {
+        font-size: 1.5rem;
+    }
+
+    .diensten ul li {
+        font-size: 0.8rem;
+    }
+
+    ul li a {
+        font-size: 1rem;
+    }
+
+    .dienstenTitles {
+        font-size: 1.2rem;
+    }
+}
