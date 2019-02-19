@@ -181,11 +181,11 @@ ul li a:hover {
 /* ----------- animations ------------- */
 
 .leftAnimation {
-    animation: LeftDown 1.5s ease-in-out 500ms 1 normal forwards;
+    animation: LeftDown 1.5s ease-in-out 1s 1 normal forwards;
 }
 
 .rightAnimation {
-    animation: RightUp 1.5s ease-in-out 500ms 1 normal forwards;
+    animation: RightUp 1.5s ease-in-out 1s 1 normal forwards;
 }
 
 @keyframes LeftDown {
