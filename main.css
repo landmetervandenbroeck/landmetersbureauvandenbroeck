@@ -276,10 +276,17 @@ p.adres {
 
 /* --------------- MEDIA QUERIES --------------- */
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     ul {
         flex-direction: row;
         justify-content: space-around;
+    }
+    .logo {
+        margin: 0 auto;
+        display: block;
+        height: 60px;
+        width: 127px;
+        z-index: 100;
     }
     
 }
