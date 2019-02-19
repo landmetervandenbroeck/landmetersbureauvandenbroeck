@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: url(bg_trees.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+/* ------------ TOP PART PLUS LOGO ---------------- */
+
+.top {
+    background-color: rgba(20, 54, 68, 0.5);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    margin: 0 auto;
+    display: block;
+    height: 120px;
+    width: 120px;
+    z-index: 100;
+}
+
+/* ---------------- NAVIGATIE ----------------- */
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 80%;
+    /* opacity: 0; */
+}
+
+ul li {
+    list-style: none;
+    margin: 0 60px;
+    transition: 0.5s;
+}
+
+ul li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: rgba(245,245,220, 0.8);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+ul:hover li a {
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+ul li a:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+
+
+/* ----------------- MiDDEL TEXT MET NAAM ------------------- */
+
+.wardvdb {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(245,245,220);
+    margin: 0 auto;
+    font-size: 3rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.15rem;
+}
+
+.vandenbroeck {
+    font-weight: 300;
+    text-transform: initial;
+    letter-spacing: 2.5px;
+}
+
+
+.wardvdbContainer {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding-top: 35vh;
+}
+
+
+/* --------------- ONDERSTE DEEL ------------- */
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    height: 35vh;
+    width: 100%;
+    background: rgba(20, 54, 68, 0.5);
+}
+
+footer {
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-end;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgb(245,245,220);
+    font-style: normal;
+    font-weight: 300;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+
+
+}
+
+address a {
+    text-decoration: none;
+    color: rgb(245,245,220);
+    font-weight: 300;
+}
+
+p.adres {
+    margin: 0;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    padding: 5px 10px 0px 0px;
+}
+
+.noTopPadding {
+    padding-top: 0;
+}
+
+.iconPlusLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.noTopPadding {
+    padding-top: 0;
+}
+
+/* --------------------- animations ------------------- */
+
+.top {
+    height: 50vh;
+    animation: topUp 1.2s ease-in-out 0.6s 1 normal forwards;
+}
+
+.bottom {
+    height: 50vh;
+    animation: bottomDown 1.2s ease-in-out 0.6s 1 normal forwards;
+}
+
+.wardvdb {
+    opacity: 0;
+    animation: textAppear 0.8s ease-in-out 1.2s 1 normal forwards;
+}
+
+.logo {
+    transform: translateY(30vh);
+    animation: logoUp 1.2s ease-in 0.6s 1 normal forwards;
+}
+
+/* ul {
+    opacity: 0;
+    animation: navIn 0.5s ease-in-out 1.2s 1 normal forwards;
+} */
+
+@keyframes topUp {
+    0% {
+        height: 50vh;
+    }
+
+    100% {
+        height: 35vh; 
+    }
+}
+
+@keyframes bottomDown {
+    0% {
+        height: 50vh;
+    }
+
+    100% {
+        height: 35vh; 
+    }
+}
+
+@keyframes textAppear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes logoUp {
+    0% {
+        transform: translateY(30vh);
+    }
+
+    100% {
+        transform: translateY(1vh);
+    }
+
+}
+
+/* @keyframes navIn {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+} */
+
+/* --------------- MEDIA QUERIES --------------- */
+
+@media (min-width: 600px) {
+    ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .wardvdb {
+        font-size: 2rem;
+    }
+
+    ul li a {
+        font-size: 1.4rem;
+    }
+}
