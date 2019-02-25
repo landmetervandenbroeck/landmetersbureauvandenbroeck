@@ -50,7 +50,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35vh;
+    /* height: 35vh; */
     width: 100%;
     overflow: hidden;
 }
@@ -124,7 +124,7 @@ ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    /* height: 30vh; */
     padding-top: 35vh;
 }
 
@@ -134,7 +134,7 @@ ul li a:hover {
 .bottom {
     position: absolute;
     bottom: 0;
-    height: 35vh;
+    /* height: 35vh; */
     width: 100%;
     background: rgba(20, 54, 68, 0.5);
 }
