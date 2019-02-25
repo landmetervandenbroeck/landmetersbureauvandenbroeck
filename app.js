@@ -96,6 +96,3 @@ verkavelingen.addEventListener('click', function() {
     schattingen.classList.toggle("hideIt");
     plaatsbeschrijvingen.classList.toggle("hideIt");
 });
-
-var viewportHeight = $('.homePageHeight').outerHeight();
-$('.homePageHeight').css({ height: viewportHeight });
