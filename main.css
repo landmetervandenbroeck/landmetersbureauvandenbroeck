@@ -37,8 +37,8 @@ body {
 .logo {
     margin: 0 auto;
     display: block;
-    height: 120px;
-    width: 253px;
+    height: 100px;
+    width: 212px;
     z-index: 100;
 }
 
@@ -56,7 +56,7 @@ body {
 }
 
 ul {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -275,10 +275,36 @@ p.adres {
 } */
 
 /* --------------- MEDIA QUERIES --------------- */
+@media (min-width: 1000px) {
+    ul li a {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    ul li a {
+        font-size: 2.5rem;
+    }
+
+    .wardvdb {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .logo {
+        margin: 0 auto;
+        display: block;
+        height: 80px;
+        width: 169px;
+        z-index: 100;
+    }
+}
+  
 
 @media (max-width: 600px) {
     ul {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
     }
     .logo {
@@ -287,16 +313,40 @@ p.adres {
         height: 60px;
         width: 127px;
         z-index: 100;
-    }
-    
+    }  
 }
 
 @media (max-width: 600px) {
     .wardvdb {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     ul li a {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .wardvdb {
+        font-size: 2rem;
+    }
+
+    .logo {
+        height: 70px;
+        width: 148px;
+    }
+}
+
+@media (max-width: 390px) {
+    .wardvdb {
+        font-size: 1.8rem;
+    }
+    ul li a {
         font-size: 1.4rem;
+    }
+
+    .logo {
+        height: 40px;
+        width: 84px;
     }
 }
