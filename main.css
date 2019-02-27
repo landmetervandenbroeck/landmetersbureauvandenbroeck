@@ -19,7 +19,7 @@ body {
 /* ------------ TOP PART PLUS LOGO ---------------- */
 
 .top {
-    background-color: rgba(20, 54, 68, 0.5);
+    background-color: rgba(20, 54, 68, 0.7);
     position: absolute;
     width: 100%;
     display: flex;
@@ -136,7 +136,7 @@ ul li a:hover {
     bottom: 0;
     height: 35vh;
     width: 100%;
-    background: rgba(20, 54, 68, 0.5);
+    background: rgba(20, 54, 68, 0.7);
 }
 
 footer {
