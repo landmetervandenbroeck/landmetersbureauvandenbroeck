@@ -132,7 +132,7 @@ ul li a:hover {
 
 .contactWard {
     padding-left: 5rem;
-    background: rgba(20, 54, 68, 0.5);
+    background: rgba(20, 54, 68, 0.7);
     width: 50%;
     height: 100%;
     display: flex;
@@ -143,7 +143,7 @@ ul li a:hover {
 
 .contactEmiel {
     padding-right: 5rem;
-    background: rgba(20, 54, 68, 0.5);
+    background: rgba(20, 54, 68, 0.7);
     width: 50%;
     display: flex;
     flex-direction: column;
